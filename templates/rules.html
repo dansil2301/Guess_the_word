@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rules</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/rules_style.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
+</head>
+<body>
+    <h1>
+        Rules
+    </h1>
+    <div id = "table">
+        <ul>
+            <b>
+                <li>You have to guess the word letter by letter</li>
+                <li>Every guessed letter will give you 100 points</li>
+                <li>Letters guessed in row will give extra points<br>extra points = 10 * (words in a row - 1)</li>
+                <li>Every guessed word will give you 500 points</li>
+                <li>You have 5 tries to guess a word otherwise you lose<br>every guessed letter gives you extra try</li>
+                <li>The default difficulty is normal, you can change it</li>
+            </b>
+        </ul>
+    </div>
+    <button id = "back" onclick="main_animation('back',
+        ['table', 'back'], ['/', '/'])">
+        <b>Back</b>
+    </button>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/animation_funcs.js') }}"> </script>
+</body>
+</html>

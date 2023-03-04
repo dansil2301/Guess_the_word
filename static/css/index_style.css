@@ -1,0 +1,89 @@
+#Start {
+    font-family: LondrinaSketch-Regular;
+    font-size: 64px;
+    width: 380px;
+    height: 100px;
+    background: #86C5E8;
+    -webkit-border-radius: 100px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    margin: auto auto 40px;
+    position: relative;
+    color: black;
+    box-shadow: 0px 3px 3px gray;
+}
+
+#Start:hover {
+    background: #64AED7;
+    -webkit-animation: button_an 6s ease-in-out infinite alternate;
+    animation: button_an 6s ease-in-out infinite alternate;
+}
+
+#Start:focus {
+    box-shadow: 0px 1px 1px gray;
+}
+
+#Difficulty {
+    font-family: LondrinaSketch-Regular;
+    font-size: 64px;
+    width: 380px;
+    height: 100px;
+    background: #86C5E8;
+    -webkit-border-radius: 100px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    margin: auto auto 40px;
+    position: relative;
+    color: black;
+    box-shadow: 0px 3px 3px gray;
+}
+
+#Difficulty:hover {
+    background: #64AED7;
+    -webkit-animation: button_an 6s ease-in-out infinite alternate;
+    animation: button_an 6s ease-in-out infinite alternate;
+}
+
+#Difficulty:focus {
+    box-shadow: 0px 1px 1px gray;
+}
+
+#Rules {
+    font-family: LondrinaSketch-Regular;
+    font-size: 64px;
+    width: 380px;
+    height: 100px;
+    background: #86C5E8;
+    -webkit-border-radius: 100px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    margin: auto;
+    position: relative;
+    color: black;
+    box-shadow: 0px 3px 3px gray;
+}
+
+#Rules:hover {
+    background: #64AED7;
+    -webkit-animation: button_an 6s ease-in-out infinite alternate;
+    animation: button_an 6s ease-in-out infinite alternate;
+}
+
+#Rules:focus {
+    box-shadow: 0px 1px 1px gray;
+}

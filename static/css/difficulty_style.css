@@ -1,0 +1,93 @@
+#difficulty {
+    margin-bottom: 70px;
+}
+
+#easy {
+    width: 380px;
+    height: 100px;
+    background: #86C5E8;
+    -webkit-border-radius: 100px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    margin: auto auto 40px;
+    position: relative;
+    color: black;
+    box-shadow: 0px 3px 3px gray;
+    font-size: 64px;
+    font-family: LondrinaSketch-Regular;
+}
+
+#easy:hover {
+    background: #64AED7;
+    -webkit-animation: button_an 6s ease-in-out infinite alternate;
+    animation: button_an 6s ease-in-out infinite alternate;
+}
+
+#easy:focus {
+    box-shadow: 0px 1px 1px gray;
+}
+
+#medium {
+    width: 380px;
+    height: 100px;
+    background: #86C5E8;
+    -webkit-border-radius: 100px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    margin: auto auto 40px;
+    position: relative;
+    color: black;
+    box-shadow: 0px 3px 3px gray;
+    font-size: 64px;
+    font-family: LondrinaSketch-Regular;
+}
+
+#medium:hover {
+    background: #64AED7;
+    -webkit-animation: button_an 6s ease-in-out infinite alternate;
+    animation: button_an 6s ease-in-out infinite alternate;
+}
+
+#medium:focus {
+    box-shadow: 0px 1px 1px gray;
+}
+
+#difficult {
+    width: 380px;
+    height: 100px;
+    background: #86C5E8;
+    -webkit-border-radius: 100px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    display: block;
+    margin: auto auto 40px;
+    position: relative;
+    color: black;
+    box-shadow: 0px 3px 3px gray;
+    font-size: 64px;
+    font-family: LondrinaSketch-Regular;
+}
+
+#difficult:hover {
+    background: #64AED7;
+    -webkit-animation: button_an 6s ease-in-out infinite alternate;
+    animation: button_an 6s ease-in-out infinite alternate;
+}
+
+#difficult:focus {
+    box-shadow: 0px 1px 1px gray;
+}

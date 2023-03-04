@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difficulty</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_style.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/difficulty_style.css') }}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="difficulty">
+        Difficulty
+    </h1>
+    <form method="post" action="/difficulty" class="form-button">
+        <input type="submit" value="Easy" name="Easy" id="easy" onclick="main_animation('easy',
+        ['easy', 'medium', 'difficult', 'back'], ['/', '/', '/', '/'], true)"/>
+        <input type="submit" value="Medium" name="Medium" id="medium" onclick="main_animation('medium',
+        ['easy', 'medium', 'difficult', 'back'], ['/', '/', '/', '/'], true)"/>
+        <input type="submit" value="Difficult" name="Difficult" id="difficult" onclick="main_animation('difficult',
+        ['easy', 'medium', 'difficult', 'back'], ['/', '/', '/', '/'], true)"/>
+    </form>
+    <button id = "back" onclick="main_animation('back', ['easy', 'medium', 'difficult', 'back'], ['/', '/', '/', '/'])">
+        <b>Back</b>
+    </button>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/animation_funcs.js') }}"> </script>
+</body>
+</html>

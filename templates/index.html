@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess the word</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index_style.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
+</head>
+<body>
+    <h1 id>
+        Guess Game
+    </h1>
+    <div class = "button">
+        <button id = "Start" onclick="main_animation('Start',
+        ['Start', 'Difficulty', 'Rules'], ['/game', '/difficulty', '/rules'])">
+            Start Game
+        </button>
+        <button id = "Difficulty" onclick="main_animation('Difficulty',
+        ['Start', 'Difficulty', 'Rules'], ['/game', '/difficulty', '/rules'])">
+            Difficulty ({{dif_level}})
+        </button>
+        <button id = "Rules" onclick="main_animation('Rules',
+        ['Start', 'Difficulty', 'Rules'], ['/game', '/difficulty', '/rules'])">
+            Rules
+        </button>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/animation_funcs.js') }}"> </script>
+</body>
+</html>

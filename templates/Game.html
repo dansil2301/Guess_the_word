@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/game_style.css') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.png') }}" />
+</head>
+<body>
+    <h1 id="game_h">
+        Guess Game
+    </h1>
+    <div id="points">
+        Points:{{ points }} Streak:{{ streak }} Tries:{{ tries }}
+    </div>
+    <div id="word">
+        {% for letter in guessed_letters %}
+        <div class="word">
+            {{ letter }}
+        </div>
+        {% endfor %}
+    </div>
+    <div id="empty_">
+        {% for _ in empty_word %}
+        <div class="empty_">
+            {{ _ }}
+        </div>
+        {% endfor %}
+    </div>
+    <form method="post" action="/game" id="letter">
+        <label id="letter_head">Input Letter:<br></label>
+        {% block content %}
+            {% if not cont %}
+                <input
+                        type="text" maxlength="1" name="Letter" value=""
+                        required id="input_line" aria-required="true" autofocus
+                ><br>
+                <input type="submit" value="Submit" id="submit_button">
+            {% endif %}
+        {% endblock content %}
+    </form>
+    {% if cont %}
+        <div id="over">
+            <b>
+                Game Over<br>
+                <div id="not_guessed">
+                    that was "{{ not_guessed_w }}"
+                </div>
+            </b>
+            <form method="post" action="/game" id="end_game">
+                <input type="submit" value="Leave" name="leave" id="leave"/>
+                <input type="submit" value="Restart" name="restart" id="restart"/>
+            </form>
+        </div>
+    {% endif %}
+    <div id = "used_letters">
+        <h2>Used letters</h2>
+        {% for letter in used_letters %}
+        <b> {{ letter }} </b>
+        {% endfor %}
+    </div>
+    <div id = "whaat">
+        <h2>Like whaaaat?</h2>
+        {% for letter in whaat %}
+            <b> {{ letter }} </b>
+        {% endfor %}
+    </div>
+</body>
+</html>
